@@ -6,8 +6,9 @@ export default function Hero() {
   return (
 		<header className={`container ${styles.hero}`}>
 			<div className='row'>
-			  <div className='col-sm-6'>
-				  <img src="" />
+				<div className={`col-sm-6 ${styles.heroImg}`}>
+				  <img src='/images/heroImg.png' alt='bg' />
+				  <h1>NFT</h1>
 				</div>
 				<div className='col-sm-6'>
 					<h1>Discover, and sell Extraordinary NFTs</h1>

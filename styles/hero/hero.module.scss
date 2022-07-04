@@ -1,3 +1,21 @@
 .hero{
-    
+  
+}
+
+.heroImg{
+    img{
+        width: 60%;
+        height: 100%;
+        object-fit: contain;
+        position: relative;
+    }
+
+    h1{
+        font-size: 75px;
+        font-weight: bold;
+        color: #fff;
+        position: absolute;
+        left: 180px;
+        bottom: 250px;
+    }
 }
