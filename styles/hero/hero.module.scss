@@ -18,4 +18,48 @@
         left: 180px;
         bottom: 250px;
     }
+
+  
 }
+
+.heroText{
+    h1{
+        font-size: 45px;
+        color: #fff;
+    }
+  button{
+       width: 134px;
+		height: 42px;
+		background: linear-gradient(90deg, #57199e 0%, #c64bfb 100%);
+		border-radius: 27px;
+		border: none;
+		color: #fff;
+		font-size: 14px;
+		font-weight: bold;
+		cursor: pointer; 
+    }
+}
+
+.stat{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    p{
+      color: rgb(119, 119, 119);
+      font-size: 18px;
+      font-weight: normal;
+    }
+
+    h6{
+       color: #6213BE;
+      font-size: 45px;
+      font-weight: bold;
+    //   line-height: 1.4;
+    }
+}
+
+.lines{
+      width: 100%;
+      color:#ffffff;
+    }

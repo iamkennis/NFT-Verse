@@ -12,7 +12,7 @@ export default function Navbar():JSX.Element {
 		<nav className={`container-fluid ${styles.nav}`}>
 			<div className='row'>
 				<div className='col-sm-4'>
-					<h1>NTF Verse</h1>
+					<h4>NTF Verse</h4>
 				</div>
 				<ul className='col-sm-4'>
 					{NavData.map((data: any, index: any) => (
