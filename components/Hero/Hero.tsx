@@ -10,14 +10,14 @@ export default function Hero() {
 		<header className={`container ${styles.hero}`}>
 			<div className='row'>
 				<div className={`col-sm-6 ${styles.heroImg}`}>
-					<Image
+					{/* <Image
 						src='/images/heroImg.png'
 						alt='hero'
-						height={500}
+						height={300}
 						width={500}
 						objectFit={'contain'}
-						className={styles.Imgblob}
-					/>
+						// className={styles.Imgblob}
+					/> */}
 					<h1>NFT</h1>
 				</div>
 				<div className={`col-sm-6 ${styles.heroText}`}>
