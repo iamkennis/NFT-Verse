@@ -1,5 +1,5 @@
 .hero{
-  padding: 30px;
+  padding: 50px;
 }
 
 .heroImg{
@@ -22,17 +22,19 @@
 
 .heroText{
     h1{
-        font-size: 45px;
+        font-size: 50px;
         color: #fff;
+        font-weight: 900;
+        line-height: 1.5;
     }
   button{
-       width: 134px;
-		height: 42px;
+       width: 154px;
+		height: 45px;
 		background: linear-gradient(90deg, #57199e 0%, #c64bfb 100%);
 		border-radius: 27px;
 		border: none;
 		color: #fff;
-		font-size: 14px;
+		font-size: 16px;
 		font-weight: bold;
 		cursor: pointer; 
     }
