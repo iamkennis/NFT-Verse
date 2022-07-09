@@ -1,4 +1,5 @@
 import React from 'react'
+import Auction from '../components/Auction/Auction'
 import Drop from '../components/Drop/drop'
 import Footer from '../components/Footer/footer'
 import Hero from '../components/Hero/Hero'
@@ -11,6 +12,7 @@ export default function Layout() {
 			<Navbar />
 			<Hero />
 			<Drop />
+			<Auction/>
 			<Footer />
 		</div>
 	);

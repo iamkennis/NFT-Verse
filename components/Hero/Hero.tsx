@@ -18,7 +18,7 @@ export default function Hero() {
 						objectFit={'contain'}
 						// className={styles.Imgblob}
 					/>
-					<h1>NFT</h1>
+					{/* <h1>NFT</h1> */}
 				</div>
 				<div className={`col-sm-6 ${styles.heroText}`}>
 					<h1>

@@ -1,6 +1,6 @@
 .lines{
       width: 100%;
-      color:#ffffff;
+      background: linear-gradient(90deg, #57199e 100%, #12001A 50%);
     }
 
 .drop{
@@ -14,4 +14,66 @@
       font-size: 18px;
       font-weight: normal;
     }
+}
+
+.dropCarousel{
+  color:rgb(158, 138, 184);
+  margin-top: 80px;
+
+  h1{
+    font-size: 40px;
+    font-weight: 500;
+  }
+
+  p{
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  h3{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 50px;
+  }
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  li{
+    list-style: none;
+    font-size: 45px;
+    font-weight: 500;
+    color: #f7e2ff;
+  }
+
+  small{
+     font-size: 20px;
+     font-weight:400;
+       color: #3a104b;
+  }
+
+  button{
+    width: 400px;
+		height: 42px;
+		background: linear-gradient(90deg, #57199e 0%, #c64bfb 100%);
+		border-radius: 27px;
+		border: none;
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		cursor: pointer; 
+  }
+
+  span{
+    border: 1px solid #57199e;
+    padding: 20px;
+    // width: 100px;
+    // height: 42px;
+    font-size: 16px;
+    border-radius:60px;
+    margin-left: 50px;
+  }
 }
