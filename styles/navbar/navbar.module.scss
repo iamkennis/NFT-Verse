@@ -1,10 +1,9 @@
 .nav {
 	padding: 30px;
 	color: #fff;
+	position: relative;
+	z-index: 100;
 
-	h4 {
-		font-size: 20px;
-	}
 	ul {
 		display: flex;
 		flex-direction: row;

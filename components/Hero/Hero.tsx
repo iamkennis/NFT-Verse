@@ -4,22 +4,27 @@ import Image from 'next/image'
 import styles from '../../styles/hero/hero.module.scss'
 import { statData } from '../../mocks/header';
 import {TiImage} from 'react-icons/ti'
-
+import TrimCirlce from '../../shared/svg/trimCirlce'
 export default function Hero() {
   return (
 		<header className={`container ${styles.hero}`}>
 			<div className='row'>
 				<div className={`col-sm-6 ${styles.heroImg}`}>
-					<Image
+					{/* <Image
 						src='/images/girlread.png'
 						alt='hero'
 						height={500}
 						width={500}
 						objectFit={'contain'}
 						// className={styles.Imgblob}
-					/>
+					/> */}
 					{/* <h1>NFT</h1> */}
+				
 				</div>
+				<div className={styles.trimCirlce}>
+					<TrimCirlce />
+				</div>
+
 				<div className={`col-sm-6 ${styles.heroText}`}>
 					<h1>
 						Discover, and sell Extraordinary <br /> NFTs
@@ -46,3 +51,4 @@ export default function Hero() {
 		</header>
 	);
 }
+

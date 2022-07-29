@@ -20,8 +20,16 @@
 	}
 }
 
+.trimCirlce{
+	position: absolute;
+	z-index: 50;
+	transform: translate(37rem, -160px);
+}
+
 .heroText {
   margin-bottom: 150px;
+  	position: relative;
+	z-index: 100;
 	h1 {
 		font-size: 50px;
 		color: #fff;
@@ -66,4 +74,5 @@
 	background: linear-gradient(90deg, #57199e 100%, #12001a 50%);
   margin-top: 50px;
   margin-bottom: 30px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
 }
