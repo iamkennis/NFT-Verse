@@ -23,11 +23,20 @@
   h1{
     font-size: 40px;
     font-weight: 500;
+     margin-top: 80px;
+  }
+  .star{
+   position: absolute;
+   right: 80px;
   }
 
   p{
     font-size: 16px;
     font-weight: 400;
+    color: rgb(255, 255, 255);
+    line-height: 1.7;
+    max-width: 600px;
+     margin-bottom: 50px;
   }
 
   h3{
@@ -68,12 +77,6 @@
   }
 
   span{
-    border: 1px solid #57199e;
-    padding: 20px;
-    // width: 100px;
-    // height: 42px;
-    font-size: 16px;
-    border-radius:60px;
     margin-left: 50px;
   }
 }

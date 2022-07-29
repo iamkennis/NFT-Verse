@@ -1,0 +1,45 @@
+.auction{
+    padding-top: 100px;
+    text-align: center;
+.lopper {
+    position: absolute;
+    z-index: 50px;
+}
+h1{
+ color: rgb(255, 255, 255);
+ font-size: 36px;
+padding-bottom: 30px;
+}
+
+.auctionBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+
+    .box1{
+width: 322.18px;
+height: 392px;
+background: linear-gradient(270deg, #1B0F23 71.16%, rgba(27, 15, 35, 0) 100%);
+border-radius: 16.824px;
+}
+
+.box2{
+width: 383px;
+height: 466px;
+background: linear-gradient(270deg, #1B0F23 71.16%, rgba(27, 15, 35, 0) 100%);
+border-radius: 16.824px;
+}
+
+.box3{
+width: 322px;
+height: 391.78px;
+background: linear-gradient(270deg, #1B0F23 81.05%, rgba(27, 15, 35, 0) 100%);
+border-radius: 16.824px;
+}
+}
+}
+
+/* Rectangle 7 */
+
