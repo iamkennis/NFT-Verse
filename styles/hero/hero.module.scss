@@ -3,6 +3,7 @@
 }
 
 .heroImg {
+	font-family: Poppins;
 	img {
 		width: 60%;
 		height: 100%;
@@ -27,6 +28,7 @@
 }
 
 .heroText {
+	font-family: Poppins;
   margin-bottom: 150px;
   	position: relative;
 	z-index: 100;
@@ -53,7 +55,7 @@
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
-
+font-family: Poppins;
 	p {
 		color: rgb(119, 119, 119);
 		font-size: 18px;
