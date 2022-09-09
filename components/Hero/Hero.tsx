@@ -29,7 +29,8 @@ export default function Hero() {
 					<h1>
 						Discover, and sell Extraordinary <br /> NFTs
 					</h1>
-					<span>
+				  <span>
+					  
 						<img />
 						<img />
 					</span>
