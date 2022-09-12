@@ -17,7 +17,7 @@ export default function Drop() {
 			<section className='row'>
 				<div className='col-sm-5'>
 					<Image
-						src='/images/girlread.png'
+						src='/images/p.svg'
 						alt='hero'
 						height={500}
 						width={400}

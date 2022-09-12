@@ -1,5 +1,5 @@
 .nav {
-	padding: 30px;
+	padding-top: 50px;
 	color: #fff;
 	position: relative;
 	z-index: 100;
@@ -8,8 +8,17 @@
 	ul {
 		display: flex;
 		flex-direction: row;
-		
-		gap: 2rem;
+		align-items: center;
+		padding-top: 10px;
+		// padding-right: 145px;
+		// margin-left: 40px;
+		gap: 1rem;
+	}
+
+	@media (max-width: 992px) {
+		ul {
+			display: none;
+		}
 	}
 
 	li {
@@ -30,45 +39,128 @@
 .btnSearch {
 	display: flex;
 	flex-direction: row;
-	gap: 2rem;
-}
-.form {
-	border: 1px solid #fff;
-	border-radius: 24px;
-	padding: 10px;
-	width: 150px;
-	height: 42px;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	gap: 5px;
-	opacity: 0.4;
-	font-family: Poppins;
+	gap: 1rem;
+	padding-left: 40px;
 
-	input {
-		border: none;
-		outline: none;
+	@media (max-width: 992px) {
+		display: none;
+	}
+
+	.form {
+		border: 1px solid #fff;
+		border-radius: 24px;
 		padding: 10px;
-		width: 120px;
+		width: 150px;
 		height: 42px;
-		background: none;
-		background-color: transparent;
-		font-size: 14px;
-		color: #fff;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 5px;
+		opacity: 0.4;
+		font-family: Poppins;
+
+		input {
+			border: none;
+			outline: none;
+			padding: 10px;
+			width: 100px;
+			height: 42px;
+			background: none;
+			background-color: transparent;
+			font-size: 14px;
+			color: #fff;
+		}
+	}
+
+	.btn {
+		font-family: Poppins;
+		button {
+			width: 134px;
+			height: 42px;
+			background: linear-gradient(90deg, #57199e 0%, #c64bfb 100%);
+			border-radius: 27px;
+			border: none;
+			color: #fff;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;
+		}
 	}
 }
 
-.btn {
-	font-family: Poppins;
-	button {
-		width: 134px;
-		height: 42px;
-		background: linear-gradient(90deg, #57199e 0%, #c64bfb 100%);
-		border-radius: 27px;
-		border: none;
+.mobileMenu {
+	display: none;
+	@media (max-width: 992px) {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		padding: 50px;
+		background-color: #230644;
+		position: absolute;
+		 top: 0;
+		z-index: 10000;
+		// margin-top: 20px;
+	}
+	ul {
+		font-size: 20px;
+		gap: 60px;
+		font-weight: 700;
+		line-height: 1.7;
+		padding: 80px 280px;
+	}
+
+	li {
+		list-style: none;
+		padding-bottom: 40px;
+	}
+	a {
+		text-decoration: none;
 		color: #fff;
-		font-size: 16px;
-		font-weight: bold;
-		cursor: pointer;
+	}
+
+	@media (max-width: 992px) {
+		.btnSearch {
+			display: block;
+			padding-left:160px;
+		}
+
+		.form {
+		padding: 10px;
+		width: 350px;
+		height: 60px;
+		border-radius: 30px;
+		margin-bottom: 20px;
+
+		input {
+			padding: 10px;
+			width: 350px;
+			height: 60px;
+			font-size: 16px;
+			
+		}
+	}
+
+	.btn {
+		font-family: Poppins;
+		button {
+			width: 350px;
+			height: 60px;
+			border-radius: 30px;
+			font-size: 18px;
+		}
+	}
+	}
+}
+
+@media (max-width: 992px) {
+	.menuIcon {
+		color: white;
+		font-size: 40px;
+		position: absolute;
+		z-index: 100;
+		top: 40px;
+		bottom: 0;
+		right: 40px;
 	}
 }
