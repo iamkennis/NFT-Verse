@@ -1,6 +1,8 @@
 .layout{
 background-color: #12001A;
-min-height: 100vh;
-position: relative;
+position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
 overflow: hidden;
 }

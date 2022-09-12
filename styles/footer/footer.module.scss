@@ -1,0 +1,34 @@
+.footer{
+    	padding-top: 100px;
+	
+.footerLogo{
+  p{
+      padding-top: 20px;
+    color: #ffff;
+  }
+}
+    .footerNav{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        p{
+          color: #964ECE;
+          font-size: 14px;
+          font-weight: 800;
+        }
+
+        li{
+            list-style: none;
+            color: #ffff;
+            line-height: 27px;
+        }
+    }
+    .footerIcons{
+      img{
+       padding-left: 10px;
+      }
+      
+    }
+}
+

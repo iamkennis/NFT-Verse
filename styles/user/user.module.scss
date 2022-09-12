@@ -1,0 +1,129 @@
+.user {
+	display: flex;
+	flex-direction: row;
+	// width: 100%;
+	gap: 20px;
+	padding-top: 100px;
+
+	label {
+		color: white;
+	}
+
+	select {
+		background: transparent;
+		border: none;
+		outline: none;
+		color: #3b234b;
+	}
+}
+.userReview {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+	justify-self: center;
+	margin-top: 30px;
+}
+.box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 295px;
+	height: 70px;
+	background: rgba(217, 217, 217, 0.06);
+	border-radius: 13.6316px;
+	border: 1.14px solid;
+
+	img {
+		width: 72.01px;
+		height: 72.01px;
+		background: #d9d9d9;
+		border: 1.13596px solid #12001a;
+		border-radius:50px;
+		position: relative;
+		left: -30px;
+	}
+
+	h3 {
+		font-size: 14px;
+		color: white;
+		width: 100%;
+	}
+	h4 {
+		font-size: 12px;
+		color: white;
+		opacity: 0.4;
+	}
+	small {
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 27px;
+		color: #ffffff;
+		opacity: 0.4;
+	}
+}
+.newsLetter {
+	width: 67rem;
+	height: 240px;
+	background: linear-gradient(93.06deg, #974fcf 0%, #59178f 97.86%);
+	border: 2px solid #af6de4;
+	border-radius: 33px;
+	margin-top: 95px;
+	position: relative;
+		z-index: 90;
+
+	aside {
+		padding-left: 45px;
+		padding-top: 15px;
+		text-align: left;
+	}
+	h3 {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 46px;
+		color: white;
+	}
+
+	p {
+		font-weight: 450;
+		font-size: 12px;
+		line-height: 22px;
+		color: white;
+	}
+
+	form {
+		width: 400px;
+		height: 53px;
+		background: #722ea9;
+		border-radius: 26.5px;
+	}
+
+	input {
+		background: #722ea9;
+		border-radius: 26.5px;
+		padding: 15px;
+		border: none;
+		outline: none;
+	}
+
+	button {
+		width: 159px;
+		height: 48px;
+		font-size: 16px;
+		color: #000;
+		background: #ffffff;
+		border: none;
+		border-radius: 26.5px;
+	}
+	img {
+		position: relative;
+		z-index: 99;
+		width: 100%;
+		object-fit: cover;
+		left: 580px;
+		bottom: 185px;
+		mix-blend-mode: screen;
+		overflow: auto;
+		right: 200px;
+	}
+}

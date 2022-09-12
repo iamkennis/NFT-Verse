@@ -1,27 +1,44 @@
 .hero {
-	padding: 50px;
+	// padding: 50px;
+	padding-top: 100px;
 }
 
 .heroImg {
 	font-family: Poppins;
-	img {
-		width: 60%;
-		height: 100%;
+	position: relative;
+	z-index: 9;
+	.dimg {
+		position: absolute;
+		top: -100px;
+	}
+
+	.v {
+		position: absolute;
+		top: 450px;
+		left: -40;
 		object-fit: contain;
-		position: relative;
+	}
+
+	.Imgblob {
+		position: absolute;
+		left: -60px;
+		top: 0;
+		width: 50%;
+		height: 80%;
+		object-fit: contain;
 	}
 
 	h1 {
 		font-size: 75px;
 		font-weight: bold;
 		color: #fff;
-		position: absolute;
-		left: 180px;
-		bottom: 250px;
+		// position: relative;
+		// // left: 180px;
+		// bottom: 250px;
 	}
 }
 
-.trimCirlce{
+.trimCirlce {
 	position: absolute;
 	z-index: 50;
 	transform: translate(37rem, -160px);
@@ -29,8 +46,8 @@
 
 .heroText {
 	font-family: Poppins;
-  margin-bottom: 150px;
-  	position: relative;
+	margin-bottom: 150px;
+	position: relative;
 	z-index: 100;
 	h1 {
 		font-size: 50px;
@@ -55,7 +72,7 @@
 	display: flex;
 	flex-direction: row;
 	gap: 20px;
-font-family: Poppins;
+	font-family: Poppins;
 	p {
 		color: rgb(119, 119, 119);
 		font-size: 18px;
@@ -66,15 +83,14 @@ font-family: Poppins;
 		color: #6213be;
 		font-size: 45px;
 		font-weight: bold;
-    // opacity: 60%;
-   
+		// opacity: 60%;
 	}
 }
 
 .lines {
 	width: 100%;
 	background: linear-gradient(90deg, #57199e 100%, #12001a 50%);
-  margin-top: 50px;
-  margin-bottom: 30px;
-  transform: matrix(1, 0, 0, 1, 0, 0);
+	margin-top: 50px;
+	margin-bottom: 30px;
+	transform: matrix(1, 0, 0, 1, 0, 0);
 }
