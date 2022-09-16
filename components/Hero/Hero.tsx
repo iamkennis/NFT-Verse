@@ -63,7 +63,6 @@ export default function Hero() {
 						<img />
 					</span>
 					<motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-<!-- 						<TiImage /> {''} -->
 						Explore Now
 					</motion.button>
 					<hr className={styles.lines} />
