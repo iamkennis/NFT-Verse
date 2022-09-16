@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from '../../styles/auction/auction.module.scss'
 import Lopper from '../../shared/svg/lopper'
+import { motion } from 'framer-motion';
+
 
 export default function Auction() {
 	
@@ -23,9 +25,9 @@ export default function Auction() {
 					/>
 				</svg>
 		  </small> */}
-		  
+
 			<div className={`row col-md-12 ${styles.auctionBox}`}>
-				<div className={styles.smallerBox}>
+				<motion.div whileHover={{ scale: 1.1 }} className={styles.smallerBox}>
 					<img src='/images/R7.png' />
 					<small className={styles.smallBox}>
 						<span>
@@ -46,8 +48,8 @@ export default function Auction() {
 							{/* <img src='/images' /> */}
 						</span>
 					</div>
-				</div>
-				<div className={styles.smallerBox}>
+				</motion.div>
+				<motion.div whileHover={{ scale: 1.1 }} className={styles.smallerBox}>
 					<img src='/images/R8.png' />
 					<small className={styles.smallBox}>
 						<span>
@@ -68,9 +70,9 @@ export default function Auction() {
 							{/* <img src='/images/E/> */}
 						</span>
 					</div>
-				</div>
+				</motion.div>
 
-				<div className={styles.smallerBox}>
+				<motion.div whileHover={{ scale: 1.1 }} className={styles.smallerBox}>
 					<img src='/images/R9.png' />
 					<small className={styles.smallBox}>
 						<span>
@@ -91,9 +93,9 @@ export default function Auction() {
 							{/* <img src='/images' /> */}
 						</span>
 					</div>
-				  </div>
-				  
-				
+			  </motion.div>
+			  
+
 				{/* <svg
 					width='9'
 					height='14'
@@ -105,10 +107,7 @@ export default function Auction() {
 						fill='#CCD2E3'
 					/>
 				</svg> */}
-				
 			</div>
-			
-			
 		</section>
 	);
 }

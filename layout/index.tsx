@@ -65,12 +65,13 @@ export default function Layout({ children }: Props) {
 		requestAnimationFrame(() => skewScrolling());
 	};
 	return (
-
 		<div ref={scrollContainer} className={`container-fluid ${styles.layout}`}>
-			<Navbar />
-			<MobileNavbar/>
-			{children}
-			<Footer />
+			
+				<Navbar />
+				<MobileNavbar />
+				{children}
+				<Footer />
+			
 		</div>
 	);
 }

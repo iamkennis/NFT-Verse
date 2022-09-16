@@ -4,14 +4,18 @@ import Drop from '../components/Drop/drop';
 import Hero from '../components/Hero/Hero';
 import UserCard from '../components/UserCard';
 import Layout from '../layout'
+import { AnimatePresence } from 'framer-motion';
+
 
 const Home: NextPage = () => {
   return (
 		<Layout>
-			<Hero />
-			<Drop />
-		  <Auction />
-		  <UserCard/>
+			<AnimatePresence>
+				<Hero />
+				<Drop />
+				<Auction />
+				<UserCard />
+			</AnimatePresence>
 		</Layout>
 	);
 }

@@ -9,9 +9,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		padding-top: 10px;
-		// padding-right: 145px;
-		// margin-left: 40px;
+		padding-block-start: 10px;
 		gap: 1rem;
 	}
 
@@ -44,6 +42,10 @@
 
 	@media (max-width: 992px) {
 		display: none;
+	}
+
+		@media (max-width: 576px) {
+		margin-left: -50px;
 	}
 
 	.form {
@@ -90,6 +92,7 @@
 
 .mobileMenu {
 	display: none;
+
 	@media (max-width: 992px) {
 		display: flex;
 		flex-direction: column;
@@ -98,10 +101,19 @@
 		padding: 50px;
 		background-color: #230644;
 		position: absolute;
-		 top: 0;
+		top: 0;
+		left: 0;
+		right: 0;
 		z-index: 10000;
-		// margin-top: 20px;
 	}
+
+	.space {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
 	ul {
 		font-size: 20px;
 		gap: 60px;
@@ -122,45 +134,60 @@
 	@media (max-width: 992px) {
 		.btnSearch {
 			display: block;
-			padding-left:160px;
 		}
 
 		.form {
-		padding: 10px;
-		width: 350px;
-		height: 60px;
-		border-radius: 30px;
-		margin-bottom: 20px;
-
-		input {
 			padding: 10px;
-			width: 350px;
-			height: 60px;
-			font-size: 16px;
-			
-		}
-	}
-
-	.btn {
-		font-family: Poppins;
-		button {
-			width: 350px;
-			height: 60px;
+			width: 270px;
+			height: 50px;
 			border-radius: 30px;
-			font-size: 18px;
+			margin-bottom: 20px;
+
+			input {
+				padding: 10px;
+				width: 350px;
+				height: 60px;
+				font-size: 16px;
+			}
 		}
-	}
+
+		.btn {
+			font-family: Poppins;
+			button {
+				width: 270px;
+				height: 50px;
+				border-radius: 30px;
+				font-size: 18px;
+			}
+		}
 	}
 }
 
-@media (max-width: 992px) {
-	.menuIcon {
+#menuIcon {
+	display: none;
+	@media (max-width: 992px) {
+		display: block;
 		color: white;
-		font-size: 40px;
+		width: 40px;
 		position: absolute;
 		z-index: 100;
 		top: 40px;
 		bottom: 0;
-		right: 40px;
+		right: 20px;
+	}
+}
+
+.menuTimes {
+	display: none;
+	@media (max-width: 992px) {
+		display: block;
+		color: white;
+		font-size: 30px;
+		width: 40px;
+		position: absolute;
+		z-index: 100;
+		top: 40px;
+		bottom: 0;
+		right: 10px;
 	}
 }

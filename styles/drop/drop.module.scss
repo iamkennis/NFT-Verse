@@ -1,73 +1,126 @@
-.lines{
-      width: 100%;
-      background: linear-gradient(90deg, #57199e 100%, #12001A 50%);
-    }
-
-.drop{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 2rem;
-
-    p{
-      color: rgb(255, 255, 255);
-      font-size: 18px;
-      font-family: Poppins;
-      font-weight: normal;
-    }
+.lines {
+	width: 100%;
+	background: linear-gradient(90deg, #57199e 100%, #12001a 50%);
 }
 
-.dropCarousel{
-  color:rgb(158, 138, 184);
-  margin-top: 80px;
-  font-family: Poppins;
+.drop {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 2rem;
 
-  h1{
-    font-size: 40px;
-    font-weight: 500;
-     margin-top: 80px;
-  }
-  .star{
-   position: absolute;
-   right: 180px;
-  }
+	p {
+		color: rgb(255, 255, 255);
+		font-size: 18px;
+		font-family: Poppins;
+		font-weight: normal;
+	}
+}
 
-  p{
-    font-size: 16px;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-    line-height: 1.7;
-    max-width: 600px;
-     margin-bottom: 50px;
-  }
+.dropoo {
+	margin-top: 100px;
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
 
-  h3{
-    font-size: 40px;
-    font-weight: 500;
-    margin-top: 50px;
-  }
+.span {
+	@media (max-width: 576px) {
+		display: none;
+	}
 
-  ul{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
+	@media (max-width: 768px) {
+		display: none;
+	}
+}
 
-  li{
-    list-style: none;
-    font-size: 45px;
-    font-weight: 500;
-    color: #f7e2ff;
-  }
+.dropCarousel {
+	color: rgb(158, 138, 184);
+	margin-top: 80px;
+	font-family: Poppins;
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		left: 140px;
+	}
 
-  small{
-     font-size: 20px;
-     font-weight:400;
-       color: #3a104b;
-  }
+	@media (max-width: 576px) {
+		position: relative;
+		left: 40px;
+	}
 
-  button{
-    width: 400px;
+	h1 {
+		font-size: 40px;
+		font-weight: 500;
+		margin-top: 80px;
+		@media (max-width: 768px) {
+			font-size: 43px;
+			margin-bottom: 50px;
+		}
+	}
+	.star {
+		position: absolute;
+		right: 180px;
+
+		@media (max-width: 768px) {
+			right: 280px;
+		}
+	}
+
+	p {
+		font-size: 16px;
+		font-weight: 400;
+		color: rgb(255, 255, 255);
+		line-height: 1.7;
+		max-width: 600px;
+		margin-bottom: 50px;
+
+		@media (max-width: 576px) {
+			margin-right: 50px;
+		}
+	}
+
+	h3 {
+		font-size: 40px;
+		font-weight: 500;
+		margin-top: 50px;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: row;
+		gap: 30px;
+	}
+
+	li {
+		list-style: none;
+		font-size: 45px;
+		font-weight: 500;
+		color: #f7e2ff;
+		@media (max-width: 992px) {
+			position: relative;
+			right: 30px;
+		}
+		@media (max-width: 576px) {
+			font-size: 30px;
+			position: relative;
+			right: 40px;
+		}
+	}
+
+	small {
+		font-size: 20px;
+		font-weight: 400;
+		color: #3a104b;
+		@media (max-width: 576px) {
+			font-size: 18px;
+		}
+	}
+
+	button {
+		width: 400px;
 		height: 42px;
 		background: linear-gradient(90deg, #57199e 0%, #c64bfb 100%);
 		border-radius: 27px;
@@ -75,10 +128,22 @@
 		color: #fff;
 		font-size: 16px;
 		font-weight: bold;
-		cursor: pointer; 
-  }
+		cursor: pointer;
 
-  span{
-    margin-left: 50px;
-  }
+		@media (max-width: 992px) {
+			width: 250px;
+			position: relative;
+			right: 40px;
+		}
+		@media (max-width: 576px) {
+			width: 300px;
+			height: 42px;
+			position: relative;
+			right: 40px;
+		}
+	}
+
+	span {
+		margin-left: 50px;
+	}
 }

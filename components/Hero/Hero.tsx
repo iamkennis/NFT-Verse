@@ -5,7 +5,12 @@ import styles from '../../styles/hero/hero.module.scss'
 import { statData } from '../../mocks/header';
 import {TiImage} from 'react-icons/ti'
 import TrimCirlce from '../../shared/svg/trimCirlce'
+
+
+
+
 export default function Hero() {
+	
   return (
 		<header className={`container ${styles.hero}`}>
 			<div className='row'>
@@ -39,7 +44,7 @@ export default function Hero() {
 							alt='hero'
 							height={900}
 							width={800}
-							objectFit={'contain'}
+							objectFit={'cover'}
 						/>
 					</div>
 				</div>
@@ -48,10 +53,6 @@ export default function Hero() {
 				</div>
 
 				<motion.div
-					animate={{ x: 0, opacity: 1 }}
-					initial={{ x: 200, opacity: 0 }}
-					exit={{ opacity: 0 }}
-					transition={{ delay: 0.1 }}
 					className={`col-sm-6 ${styles.heroText}`}>
 					<h1>
 						Discover, and sell
