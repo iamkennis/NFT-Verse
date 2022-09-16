@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import styles from '../../styles/hero/hero.module.scss'
 import { statData } from '../../mocks/header';
-import {TiImage} from 'react-icons/ti'
+// import {TiImage} from 'react-icons/ti'
 import TrimCirlce from '../../shared/svg/trimCirlce'
 
 
@@ -63,7 +63,7 @@ export default function Hero() {
 						<img />
 					</span>
 					<motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-						<TiImage /> {''}
+<!-- 						<TiImage /> {''} -->
 						Explore Now
 					</motion.button>
 					<hr className={styles.lines} />
