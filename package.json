@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.2.1",
     "framer-motion": "^6.3.13",
     "next": "12.1.6",
     "react": "18.2.0",
@@ -19,6 +20,7 @@
     "swiper": "^8.3.2"
   },
   "devDependencies": {
+    "@types/bootstrap": "^5.2.4",
     "@types/node": "18.0.0",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
