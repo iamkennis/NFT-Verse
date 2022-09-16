@@ -9,12 +9,13 @@ body {
 
 html {
   height: 100%;
-
+// overflow: hidden;
 }
 
 
 body::-webkit-scrollbar {
   // width: 8px;
+  overflow: hidden;
   display: none;
 }
 
