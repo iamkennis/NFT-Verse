@@ -25,7 +25,9 @@ export default function Footer() {
 					</div>
 				</div>
 				<div className={`col-sm-7 ${styles.footerNav}`}>
-					<div>
+				  
+				  <div>
+					  
 						<ul>
 							<p>Explore</p>
 							<li>Art</li>

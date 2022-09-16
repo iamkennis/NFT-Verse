@@ -17,7 +17,7 @@
 	}
 
 	@media (max-width: 576px) {
-		margin: auto 120px;
+		margin: auto 100px;
 	}
 }
 .userReview {
@@ -58,6 +58,11 @@
 		border-radius: 50px;
 		position: relative;
 		left: -30px;
+
+		@media (max-width: 576px) {
+			width: 62px;
+			height: 62px;
+		}
 	}
 
 	h3 {
@@ -107,10 +112,10 @@
 		margin: auto 30px;
 
 		@media (max-width: 768px) {
-			margin: 0 auto;
+			margin: 30px 20px;
 		}
 
-			@media (max-width: 576px) {
+		@media (max-width: 576px) {
 			padding: 0px 30px;
 		}
 	}
@@ -125,6 +130,12 @@
 		font-size: 20px;
 		line-height: 46px;
 		color: white;
+		@media (max-width: 576px) {
+			font-size: 24px;
+			font-weight: 800;
+			line-height: 26px;
+			padding-top: 30px;
+		}
 	}
 
 	p {
@@ -137,8 +148,8 @@
 			font-size: 12px;
 		}
 
-			@media (max-width: 768px) {
-				font-size: 16px;
+		@media (max-width: 768px) {
+			font-size: 16px;
 		}
 
 		@media (max-width: 576px) {
@@ -168,6 +179,7 @@
 		padding: 15px;
 		border: none;
 		outline: none;
+		color: #000;
 
 		@media (max-width: 576px) {
 			width: 250px;
@@ -193,7 +205,7 @@
 		}
 
 		@media (max-width: 576px) {
-			margin: 10px 60px;
+			margin: 15px 40px;
 		}
 	}
 	.bgImg {
@@ -211,9 +223,10 @@
 			}
 
 			@media (max-width: 992px) {
-				width: 100%;
-				margin-top: 49px;
-				margin-left: -25px;
+				width: 300px;
+				margin-top: 74px;
+				margin-left: -215px;
+				overflow: hidden;
 			}
 
 			@media (max-width: 768px) {
@@ -223,22 +236,22 @@
 	}
 
 	@media (max-width: 1200px) {
-		width: 60rem;
+		width: 100%;
 		height: 260px;
 	}
 
 	@media (max-width: 992px) {
-		width: 46rem;
-		height: 200px;
+		width: 100%;
+		height: 240px;
 	}
 
 	@media (max-width: 768px) {
-		width: 30rem;
-		height: 220px;
+		width: 100%;
+		height: 320px;
 	}
 	@media (max-width: 576px) {
-		width: 22rem;
-		height: 350px;
-		margin-left: -10px;
+		width: 100%;
+		height: 420px;
+		// margin-left: 10px;
 	}
 }
