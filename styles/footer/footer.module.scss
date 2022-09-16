@@ -1,5 +1,8 @@
 .footer{
     	padding-top: 100px;
+      	@media (max-width: 768px) {
+          margin:auto 20px;
+        }
 	
 .footerLogo{
   p{
@@ -23,6 +26,13 @@
             color: #ffff;
             line-height: 27px;
         }
+        	@media (max-width: 768px) {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+      margin-top: 50px;
+		}
     }
     .footerIcons{
       img{

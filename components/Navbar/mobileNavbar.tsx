@@ -14,40 +14,65 @@ export default function MobileNavbar() {
 
   return (
 		<>
-			<AiOutlineMenu className={styles.menuIcon} onClick={handleClick} />
+			<div onClick={handleClick}>
+				<svg
+					id={styles.menuIcon}
+					xmlns='http://www.w3.org/2000/svg'
+					className='h-8 w-8 lg:hidden cursor-pointer hover:text-dirtywhite'
+					fill='none'
+					viewBox='0 0 24 24'
+					stroke='currentColor'>
+					<path
+						strokeLinecap='round'
+						strokeLinejoin='round'
+						strokeWidth='2'
+						d='M4 6h16M4 12h8m-8 6h16'
+					/>
+				</svg>
+			</div>
+			{/* <AiOutlineMenu /> */}
 			{!click && (
-				<nav className={`${styles.mobileMenu}`} onClick={handleClick}>
-					<FaTimes className={styles.menuIcon} onClick={handleClick} />
+				<motion.nav
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					className={`${styles.mobileMenu}`}
+					onClick={handleClick}>
+					<div className={styles.menuTimes} onClick={handleClick}>
+						<FaTimes />
+					</div>
+
 					<div>
 						<div>
 							<Logo />
 						</div>
 
-						<ul>
-							{NavData.map((data: any, index: any) => (
-								<li key={index}>
-									<Link href={`${data.path}`}>{data.title}</Link>
-								</li>
-							))}
-						</ul>
+					  <div className={styles.space}>
+							<ul>
+								{NavData.map((data: any, index: any) => (
+									<li key={index}>
+										<Link href={`${data.path}`}>{data.title}</Link>
+									</li>
+								))}
+							</ul>
 
-						<div className={`${styles.btnSearch}`}>
-							<form className={styles.form}>
-								<span>
-									<CgSearch />
-								</span>
-								<input type='search' placeholder='Search' />
-							</form>
-							<div className={styles.btn}>
-								<motion.button
-									whileHover={{ scale: 1.1 }}
-									whileTap={{ scale: 0.9 }}>
-									Explore
-								</motion.button>
+							<div className={`${styles.btnSearch}`}>
+								<form className={styles.form}>
+									<span>
+										<CgSearch />
+									</span>
+									<input type='search' placeholder='Search' />
+								</form>
+								<div className={styles.btn}>
+									<motion.button
+										whileHover={{ scale: 1.1 }}
+										whileTap={{ scale: 0.9 }}>
+										Explore
+									</motion.button>
+								</div>
 							</div>
 						</div>
 					</div>
-				</nav>
+				</motion.nav>
 			)}
 		</>
 	);

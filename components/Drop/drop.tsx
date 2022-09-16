@@ -15,7 +15,7 @@ export default function Drop() {
 			</section>
 			<hr className={styles.lines} />
 			<section className='row'>
-				<div className='col-sm-5'>
+				<div className={`col-sm-5 ${styles.dropoo}`}>
 					<Image
 						src='/images/p.svg'
 						alt='hero'
@@ -88,7 +88,7 @@ export default function Drop() {
 								Place a Bid
 							</motion.button>
 						</span>
-						<span>
+						<span className={styles.span}>
 							<CircleArrow />
 						</span>
 					</div>
